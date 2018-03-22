@@ -1,0 +1,137 @@
+<?xml version="1.0" standalone="yes"?>
+<ProjectDS xmlns="http://tempuri.org/ProjectDS.xsd">
+  <Project>
+    <ProjectID>1</ProjectID>
+    <Name>GCD6Feshie2006</Name>
+    <Description />
+    <OutputDirectory>C:\FISTEST\Feshie2006</OutputDirectory>
+    <DateCreated>2018-03-22T11:34:52.3264969-07:00</DateCreated>
+    <GCDVersion>6.1.14.0</GCDVersion>
+    <Precision>0</Precision>
+    <DisplayUnits>m</DisplayUnits>
+    <CoordinateSystem>British_National_Grid</CoordinateSystem>
+    <ProjectType>AddIn</ProjectType>
+    <DEMSurvey>
+      <DEMSurveyID>1</DEMSurveyID>
+      <Name>DEM_2006</Name>
+      <Source>inputs\DEM2006\DEM2006.tif</Source>
+      <SingleMethodType>[Undefined]</SingleMethodType>
+      <MethodMask />
+      <SurveyDate />
+      <ProjectID>1</ProjectID>
+      <SingleMethod>true</SingleMethod>
+      <MultiMethod>false</MultiMethod>
+      <MethodMaskField />
+      <CellResolution>1</CellResolution>
+      <ExtentLeft>284261</ExtentLeft>
+      <ExtentBottom>792383</ExtentBottom>
+      <ExtentRight>284511</ExtentRight>
+      <ExtentTop>793069</ExtentTop>
+      <OriginalExtentLeft>284261</OriginalExtentLeft>
+      <OriginalExtentBottom>792383</OriginalExtentBottom>
+      <OriginalExtentRight>284511</OriginalExtentRight>
+      <OriginalExtentTop>793069</OriginalExtentTop>
+      <OriginalSource>E:\FisTester\N_FIS_Intro\Feshie\DEM_2006.tif</OriginalSource>
+      <OriginalComputer>DESKTOP-GH5SD1L</OriginalComputer>
+      <OriginalCellSize>1</OriginalCellSize>
+      <SurveyHour>0</SurveyHour>
+      <SurveyMin>0</SurveyMin>
+      <AssociatedSurface>
+        <AssociatedSurfaceID>1</AssociatedSurfaceID>
+        <DEMSurveyID>1</DEMSurveyID>
+        <Name>Slope Degrees</Name>
+        <Source>inputs\DEM2006\AssociatedSurfaces\SlopeDegrees\SlopeDegrees.tif</Source>
+        <Type>Slope Degrees</Type>
+        <OriginalSource>C:\FISTEST\Feshie2006\GCD6Feshie2006\inputs\DEM2006\AssociatedSurfaces\SlopeDegrees\SlopeDegrees.tif</OriginalSource>
+      </AssociatedSurface>
+      <AssociatedSurface>
+        <AssociatedSurfaceID>2</AssociatedSurfaceID>
+        <DEMSurveyID>1</DEMSurveyID>
+        <Name>PDensity</Name>
+        <Source>inputs\DEM2006\AssociatedSurfaces\PDensity\PDensity.tif</Source>
+        <Type>Point Density</Type>
+        <OriginalSource>C:\FISTEST\Feshie2006\GCD6Feshie2006\inputs\DEM2006\AssociatedSurfaces\PDensity\PDensity.tif</OriginalSource>
+      </AssociatedSurface>
+      <AssociatedSurface>
+        <AssociatedSurfaceID>3</AssociatedSurfaceID>
+        <DEMSurveyID>1</DEMSurveyID>
+        <Name>PQ2006</Name>
+        <Source>inputs\DEM2006\AssociatedSurfaces\PQ2006\PQ2006.tif</Source>
+        <Type>3D Point Quality</Type>
+        <OriginalSource>C:\FISTEST\Feshie2006\GCD6Feshie2006\inputs\DEM2006\AssociatedSurfaces\PQ2006\PQ2006.tif</OriginalSource>
+      </AssociatedSurface>
+      <ErrorSurface>
+        <ErrorSurfaceID>1</ErrorSurfaceID>
+        <Name>UniformError01m</Name>
+        <Type>Imported Raster</Type>
+        <Source>inputs\DEM2006\ErrorSurfaces\UniformError01m\UniformError01m.tif</Source>
+        <DEMSurveyID>1</DEMSurveyID>
+      </ErrorSurface>
+      <ErrorSurface>
+        <ErrorSurfaceID>2</ErrorSurfaceID>
+        <Name>TS_ZError_PD_SLPdeg</Name>
+        <Type>FIS</Type>
+        <Source>inputs\DEM2006\ErrorSurfaces\TSZErrorPDSLPdeg\TSZErrorPDSLPdeg.tif</Source>
+        <DEMSurveyID>1</DEMSurveyID>
+        <MultiErrorProperties>
+          <MultiErrorID>1</MultiErrorID>
+          <Method>[Undefined]</Method>
+          <Error>0</Error>
+          <ErrorID>2</ErrorID>
+          <ErrorType>TS_ZError_PD_SLPdeg</ErrorType>
+          <AssociatedSurfaceID>0</AssociatedSurfaceID>
+        </MultiErrorProperties>
+        <FISInputs>
+          <FISInputsID>1</FISInputsID>
+          <ErrorID>2</ErrorID>
+          <FISInput>SlopeDeg</FISInput>
+          <AssociatedSurface>Slope Degrees</AssociatedSurface>
+          <FIS>TS_ZError_PD_SLPdeg</FIS>
+        </FISInputs>
+        <FISInputs>
+          <FISInputsID>2</FISInputsID>
+          <ErrorID>2</ErrorID>
+          <FISInput>PointDensity</FISInput>
+          <AssociatedSurface>PDensity</AssociatedSurface>
+          <FIS>TS_ZError_PD_SLPdeg</FIS>
+        </FISInputs>
+      </ErrorSurface>
+      <ErrorSurface>
+        <ErrorSurfaceID>3</ErrorSurfaceID>
+        <Name>GPS_ZError_PD_SLPdeg_PQ</Name>
+        <Type>FIS</Type>
+        <Source>inputs\DEM2006\ErrorSurfaces\GPSZErrorPDSLPdegPQ\GPSZErrorPDSLPdegPQ.tif</Source>
+        <DEMSurveyID>1</DEMSurveyID>
+        <MultiErrorProperties>
+          <MultiErrorID>2</MultiErrorID>
+          <Method>[Undefined]</Method>
+          <Error>0</Error>
+          <ErrorID>3</ErrorID>
+          <ErrorType>GPS_ZError_PD_SLPdeg_PQ</ErrorType>
+          <AssociatedSurfaceID>0</AssociatedSurfaceID>
+        </MultiErrorProperties>
+        <FISInputs>
+          <FISInputsID>3</FISInputsID>
+          <ErrorID>3</ErrorID>
+          <FISInput>3DPointQuality</FISInput>
+          <AssociatedSurface>PQ2006</AssociatedSurface>
+          <FIS>GPS_ZError_PD_SLPdeg_PQ</FIS>
+        </FISInputs>
+        <FISInputs>
+          <FISInputsID>4</FISInputsID>
+          <ErrorID>3</ErrorID>
+          <FISInput>SlopeDeg</FISInput>
+          <AssociatedSurface>Slope Degrees</AssociatedSurface>
+          <FIS>GPS_ZError_PD_SLPdeg_PQ</FIS>
+        </FISInputs>
+        <FISInputs>
+          <FISInputsID>5</FISInputsID>
+          <ErrorID>3</ErrorID>
+          <FISInput>PointDensity</FISInput>
+          <AssociatedSurface>PDensity</AssociatedSurface>
+          <FIS>GPS_ZError_PD_SLPdeg_PQ</FIS>
+        </FISInputs>
+      </ErrorSurface>
+    </DEMSurvey>
+  </Project>
+</ProjectDS>
