@@ -1,15 +1,23 @@
 # FIS Value Tester
 
-This file uses Jupyter notebook
+This repo is a response to:
+
+https://github.com/Riverscapes/gcd/issues/190
+
+This file references a google spreadsheet with all the values:
+
+<https://docs.google.com/spreadsheets/d/1v6abeYaKZXQAyN25VEuN3NvffOTFth0cl1cJ24zNfLE/edit#gid=1355638424>
+
+This file uses Jupyter notebook (or it will when I get around to it)
 
 ```
-jupyter notebookpip install ipykernel
-
+jupyter notebook
 ```
 
 
 
-## Suggested Standard for Unit Testing FIS
+## Suggested Standard for Unit Testing FISgs
+
 Lets treat the GCD 6 FIS outputs as 'truth' as we'd previously verified those against [Matlab Fuzzy Logic Toolbox](https://www.mathworks.com/products/fuzzy-logic.html?s_tid=srchtitle) (see also #174). I would strongly suggest we also test against [scikit](https://pypi.python.org/pypi/scikit-fuzzy), and as that is open-source and Python it should be a quick an easy test to shove the text files through it.  
 
 I think the method we used above is good for testing. Briefly:
