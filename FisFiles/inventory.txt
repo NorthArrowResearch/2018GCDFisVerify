@@ -1,6 +1,0 @@
-CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr.fis
-CHaMP_TS_ZError_PD_SLPdeg_IntErr.fis
-CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr.fis
-GPS_ZError_PD_SLPdeg_PQ.fis
-TS_ZError_PD_SLPdeg.fis
-inventory.txt

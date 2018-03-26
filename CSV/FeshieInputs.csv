@@ -1,4 +1,4 @@
-id,SlopeDegrees,PQ2006,PDensity
+CellId,SlopeDeg,3DPointQuality,PointDensity
 1,1.6546,0.0207,0.1600
 2,3.5350,0.0214,0.1200
 3,3.9492,0.0204,0.0800

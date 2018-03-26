@@ -1,4 +1,4 @@
-id,PointDensity,Slope,Roughness,PointQuality3D,InterpolationError
+CellId,PointDensity,Slope,Roughness,3DPointQuality,InterpolationError
 1,0.2928,25.5231,6.6784,0.0401,0.0010
 2,0.3056,25.1587,7.2533,0.0416,0.0010
 3,0.3056,24.2785,7.7259,0.0432,0.0011
