@@ -182,7 +182,7 @@ class FisModel:
                 self.fisdict[currsection].append({
                     "antecedents": antecedents,
                     "consequents": consequents,
-                    "weight": int(rule.group(3).strip()),
+                    "weight": float(rule.group(3).strip()),
                     "logic": "AND" if int(rule.group(4).strip()) == 1 else "OR",
                 })
 

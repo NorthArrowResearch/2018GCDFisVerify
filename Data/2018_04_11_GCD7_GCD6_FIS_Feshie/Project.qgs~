@@ -1,0 +1,485 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.0.0-Girona" projectname="">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +datum=OSGB36 +units=m +no_defs</proj4>
+      <srsid>100000</srsid>
+      <srid>0</srid>
+      <authid>USER:100000</authid>
+      <description> * Generated CRS (+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +datum=OSGB36 +units=m +no_defs)</description>
+      <projectionacronym>tmerc</projectionacronym>
+      <ellipsoidacronym></ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer name="9pixels" checked="Qt::Checked" source="./9pixels.shp" id="9pixels_41ed71cc_f778_4d2c_a18e_bc74f6cd84f1" providerKey="ogr" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer name="GCD7_Minus_GCD6_Feshie_Error" checked="Qt::Checked" source="./GCD7_Minus_GCD6_Feshie_Error.tif" id="GCD7_Minus_GCD6_Feshie_Error_97d9b367_c5aa_4d4e_a4f6_089b507ea580" providerKey="gdal" expanded="0">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>GCD7_Minus_GCD6_Feshie_Error_97d9b367_c5aa_4d4e_a4f6_089b507ea580</item>
+      <item>9pixels_41ed71cc_f778_4d2c_a18e_bc74f6cd84f1</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings unit="1" type="1" tolerance="12" enabled="0" intersection-snapping="0" mode="2">
+    <individual-layer-settings>
+      <layer-setting type="1" tolerance="12" enabled="0" id="9pixels_41ed71cc_f778_4d2c_a18e_bc74f6cd84f1" units="1"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>284401.142848075251095</xmin>
+      <ymin>792968.38418982154689729</ymin>
+      <xmax>284419.90948259190190583</xmax>
+      <ymax>792992.26754039735533297</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +datum=OSGB36 +units=m +no_defs</proj4>
+        <srsid>100000</srsid>
+        <srid>0</srid>
+        <authid>USER:100000</authid>
+        <description> * Generated CRS (+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +datum=OSGB36 +units=m +no_defs)</description>
+        <projectionacronym>tmerc</projectionacronym>
+        <ellipsoidacronym></ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer open="true" name="9pixels" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="9pixels_41ed71cc_f778_4d2c_a18e_bc74f6cd84f1" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="false" name="GCD7_Minus_GCD6_Feshie_Error" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="GCD7_Minus_GCD6_Feshie_Error_97d9b367_c5aa_4d4e_a4f6_089b507ea580" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <projectlayers>
+    <maplayer maxScale="0" refreshOnNotifyMessage="" minScale="1e+8" type="vector" simplifyMaxScale="1" simplifyLocal="1" refreshOnNotifyEnabled="0" autoRefreshTime="0" autoRefreshEnabled="0" labelsEnabled="0" geometry="Polygon" simplifyAlgorithm="0" simplifyDrawingTol="1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1">
+      <extent>
+        <xmin>284405.99009453447069973</xmin>
+        <ymin>792982.93051838618703187</ymin>
+        <xmax>284409.03621503303293139</xmax>
+        <ymax>792985.97663888428360224</ymax>
+      </extent>
+      <id>9pixels_41ed71cc_f778_4d2c_a18e_bc74f6cd84f1</id>
+      <datasource>./9pixels.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>9pixels</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.1502,0.247,0.8421,-20.4894 +units=m +no_defs</proj4>
+          <srsid>100001</srsid>
+          <srid>0</srid>
+          <authid>USER:100001</authid>
+          <description> * Generated CRS (+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.1502,0.247,0.8421,-20.4894 +units=m +no_defs)</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>airy</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial minz="0" maxy="0" miny="0" minx="0" dimensions="2" crs="" maxx="0" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+        <symbols>
+          <symbol clip_to_extent="1" name="0" type="fill" alpha="0.141">
+            <layer locked="0" enabled="1" class="SimpleFill" pass="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="44,97,220,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>id</value>
+        </property>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory penColor="#000000" barWidth="5" rotationOffset="270" width="15" opacity="1" diagramOrientation="Up" enabled="0" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" penWidth="0" sizeType="MM" backgroundColor="#ffffff" minimumSize="0" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" labelPlacementMethod="XHeight" height="15" penAlpha="255" scaleDependency="Area" scaleBasedVisibility="0" maxScaleDenominator="1e+8" minScaleDenominator="0">
+          <fontProperties style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings showAll="1" priority="0" zIndex="0" dist="0" linePlacementFlags="18" obstacle="0" placement="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Descriptio">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="Descriptio"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" field="id" expression=""/>
+        <default applyOnUpdate="0" field="Descriptio" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="id" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+        <constraint field="Descriptio" constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="Descriptio" exp=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns>
+          <column name="id" type="field" width="-1" hidden="0"/>
+          <column type="actions" width="-1" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="id" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field name="id" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>id</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer maxScale="0" refreshOnNotifyMessage="" minScale="1e+8" type="raster" refreshOnNotifyEnabled="0" autoRefreshTime="0" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>284261</xmin>
+        <ymin>792383</ymin>
+        <xmax>284511</xmax>
+        <ymax>793069</ymax>
+      </extent>
+      <id>GCD7_Minus_GCD6_Feshie_Error_97d9b367_c5aa_4d4e_a4f6_089b507ea580</id>
+      <datasource>./GCD7_Minus_GCD6_Feshie_Error.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>GCD7_Minus_GCD6_Feshie_Error</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +datum=OSGB36 +units=m +no_defs</proj4>
+          <srsid>100000</srsid>
+          <srid>0</srid>
+          <authid>USER:100000</authid>
+          <description> * Generated CRS (+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +datum=OSGB36 +units=m +no_defs)</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial minz="0" maxy="0" miny="0" minx="0" dimensions="2" crs="" maxx="0" maxz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+      </resourceMetadata>
+      <customproperties>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="1" bandNo="1"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer type="singlebandpseudocolor" opacity="1" band="1" classificationMax="0" alphaBand="-1" classificationMin="-0.129808">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+          <rastershader>
+            <colorrampshader clip="0" classificationMode="1" colorRampType="INTERPOLATED">
+              <colorramp name="[source]" type="gradient">
+                <prop k="color1" v="0,0,4,255"/>
+                <prop k="color2" v="252,253,191,255"/>
+                <prop k="discrete" v="0"/>
+                <prop k="rampType" v="gradient"/>
+                <prop k="stops" v="0.0196078;2,2,11,255:0.0392157;5,4,22,255:0.0588235;9,7,32,255:0.0784314;14,11,43,255:0.0980392;20,14,54,255:0.117647;26,16,66,255:0.137255;33,17,78,255:0.156863;41,17,90,255:0.176471;49,17,101,255:0.196078;57,15,110,255:0.215686;66,15,117,255:0.235294;74,16,121,255:0.254902;82,19,124,255:0.27451;90,22,126,255:0.294118;98,25,128,255:0.313725;106,28,129,255:0.333333;114,31,129,255:0.352941;121,34,130,255:0.372549;129,37,129,255:0.392157;137,40,129,255:0.411765;145,43,129,255:0.431373;153,45,128,255:0.45098;161,48,126,255:0.470588;170,51,125,255:0.490196;178,53,123,255:0.509804;186,56,120,255:0.529412;194,59,117,255:0.54902;202,62,114,255:0.568627;210,66,111,255:0.588235;217,70,107,255:0.607843;224,76,103,255:0.627451;231,82,99,255:0.647059;236,88,96,255:0.666667;241,96,93,255:0.686275;244,105,92,255:0.705882;247,114,92,255:0.72549;249,123,93,255:0.745098;251,133,96,255:0.764706;252,142,100,255:0.784314;253,152,105,255:0.803922;254,161,110,255:0.823529;254,170,116,255:0.843137;254,180,123,255:0.862745;254,189,130,255:0.882353;254,198,138,255:0.901961;254,207,146,255:0.921569;254,216,154,255:0.941176;253,226,163,255:0.960784;253,235,172,255:0.980392;252,244,182,255"/>
+              </colorramp>
+              <item label="-0.13" value="-0.129808" color="#000004" alpha="255"/>
+              <item label="-0.127" value="-0.1272627506976" color="#02020b" alpha="255"/>
+              <item label="-0.125" value="-0.1247174884144" color="#050416" alpha="255"/>
+              <item label="-0.122" value="-0.122172239112" color="#090720" alpha="255"/>
+              <item label="-0.12" value="-0.1196269768288" color="#0e0b2b" alpha="255"/>
+              <item label="-0.117" value="-0.1170817275264" color="#140e36" alpha="255"/>
+              <item label="-0.115" value="-0.114536478224" color="#1a1042" alpha="255"/>
+              <item label="-0.112" value="-0.11199120296" color="#21114e" alpha="255"/>
+              <item label="-0.109" value="-0.109445927696" color="#29115a" alpha="255"/>
+              <item label="-0.107" value="-0.106900652432" color="#311165" alpha="255"/>
+              <item label="-0.104" value="-0.104355506976" color="#390f6e" alpha="255"/>
+              <item label="-0.102" value="-0.101810231712" color="#420f75" alpha="255"/>
+              <item label="-0.0993" value="-0.099264956448" color="#4a1079" alpha="255"/>
+              <item label="-0.0967" value="-0.096719681184" color="#52137c" alpha="255"/>
+              <item label="-0.0942" value="-0.09417440592" color="#5a167e" alpha="255"/>
+              <item label="-0.0916" value="-0.091629130656" color="#621980" alpha="255"/>
+              <item label="-0.0891" value="-0.0890839852" color="#6a1c81" alpha="255"/>
+              <item label="-0.0865" value="-0.086538709936" color="#721f81" alpha="255"/>
+              <item label="-0.084" value="-0.083993434672" color="#792282" alpha="255"/>
+              <item label="-0.0814" value="-0.081448159408" color="#812581" alpha="255"/>
+              <item label="-0.0789" value="-0.078902884144" color="#892881" alpha="255"/>
+              <item label="-0.0764" value="-0.07635760888" color="#912b81" alpha="255"/>
+              <item label="-0.0738" value="-0.073812333616" color="#992d80" alpha="255"/>
+              <item label="-0.0713" value="-0.07126718816" color="#a1307e" alpha="255"/>
+              <item label="-0.0687" value="-0.068721912896" color="#aa337d" alpha="255"/>
+              <item label="-0.0662" value="-0.066176637632" color="#b2357b" alpha="255"/>
+              <item label="-0.0636" value="-0.063631362368" color="#ba3878" alpha="255"/>
+              <item label="-0.0611" value="-0.061086087104" color="#c23b75" alpha="255"/>
+              <item label="-0.0585" value="-0.05854081184" color="#ca3e72" alpha="255"/>
+              <item label="-0.056" value="-0.055995666384" color="#d2426f" alpha="255"/>
+              <item label="-0.0535" value="-0.05345039112" color="#d9466b" alpha="255"/>
+              <item label="-0.0509" value="-0.050905115856" color="#e04c67" alpha="255"/>
+              <item label="-0.0484" value="-0.048359840592" color="#e75263" alpha="255"/>
+              <item label="-0.0458" value="-0.045814565328" color="#ec5860" alpha="255"/>
+              <item label="-0.0433" value="-0.043269290064" color="#f1605d" alpha="255"/>
+              <item label="-0.0407" value="-0.0407240148" color="#f4695c" alpha="255"/>
+              <item label="-0.0382" value="-0.038178869344" color="#f7725c" alpha="255"/>
+              <item label="-0.0356" value="-0.03563359408" color="#f97b5d" alpha="255"/>
+              <item label="-0.0331" value="-0.033088318816" color="#fb8560" alpha="255"/>
+              <item label="-0.0305" value="-0.030543043552" color="#fc8e64" alpha="255"/>
+              <item label="-0.028" value="-0.027997768288" color="#fd9869" alpha="255"/>
+              <item label="-0.0255" value="-0.025452493024" color="#fea16e" alpha="255"/>
+              <item label="-0.0229" value="-0.022907347568" color="#feaa74" alpha="255"/>
+              <item label="-0.0204" value="-0.020362072304" color="#feb47b" alpha="255"/>
+              <item label="-0.0178" value="-0.01781679704" color="#febd82" alpha="255"/>
+              <item label="-0.0153" value="-0.015271521776" color="#fec68a" alpha="255"/>
+              <item label="-0.0127" value="-0.012726246512" color="#fecf92" alpha="255"/>
+              <item label="-0.0102" value="-0.010180971248" color="#fed89a" alpha="255"/>
+              <item label="-0.00764" value="-0.00763582579199999" color="#fde2a3" alpha="255"/>
+              <item label="-0.00509" value="-0.005090550528" color="#fdebac" alpha="255"/>
+              <item label="-0.00255" value="-0.002545275264" color="#fcf4b6" alpha="255"/>
+              <item label="0" value="0" color="#fcfdbf" alpha="255"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation grayscaleMode="0" colorizeBlue="128" colorizeStrength="100" colorizeOn="0" colorizeRed="255" saturation="0" colorizeGreen="128"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="GCD7_Minus_GCD6_Feshie_Error_97d9b367_c5aa_4d4e_a4f6_089b507ea580"/>
+    <layer id="9pixels_41ed71cc_f778_4d2c_a18e_bc74f6cd84f1"/>
+  </layerorder>
+  <properties>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+    </Gui>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <Annotations/>
+  <Layouts/>
+</qgis>

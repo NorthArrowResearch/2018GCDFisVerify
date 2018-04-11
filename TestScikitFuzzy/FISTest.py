@@ -7,6 +7,8 @@ import numpy as np
 data_ugr = pd.read_csv(r"../CSV/CHaMP_UGR_CRBW05583-013882_2013.csv")
 data_feshie = pd.read_csv(r"../CSV/FeshieInputs.csv")
 
+data_feshie2 = pd.read_csv(r"../CSV/FeshieInputs2.csv")
+
 # Now load our FISFiles
 Test1 = FisModel("../FisFiles/Test1.fis")
 CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr = FisModel("../FisFiles/CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr.fis")
@@ -14,6 +16,8 @@ CHaMP_TS_ZError_PD_SLPdeg_IntErr = FisModel("../FisFiles/CHaMP_TS_ZError_PD_SLPd
 CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr = FisModel("../FisFiles/CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr.fis")
 GPS_ZError_PD_SLPdeg_PQ = FisModel("../FisFiles/GPS_ZError_PD_SLPdeg_PQ.fis")
 TS_ZError_PD_SLPdeg = FisModel("../FisFiles/TS_ZError_PD_SLPdeg.fis")
+# This is the second test for feshie
+GPS_ZError_PD_SLPdeg_ZZ = FisModel("../FisFiles/GPS_ZError_PD_SLPdeg_ZZ.fis")
 
 
 def slugify(value):
@@ -125,32 +129,39 @@ def graphMe(fismodel, title):
 
 
 
-print "-------------------\nFeshie TS_ZError_PD_SLPdeg"
-for idx, row in data_feshie[['SlopeDeg', 'PointDensity']].iterrows():
-    result = TS_ZError_PD_SLPdeg.compute(dict(row))
-    graphMe(TS_ZError_PD_SLPdeg, "Feshie TS_ZError_PD_SLPdeg CELL: {}".format(idx+1))
-    print result
+# print "-------------------\nFeshie TS_ZError_PD_SLPdeg"
+# for idx, row in data_feshie[['SlopeDeg', 'PointDensity']].iterrows():
+#     result = TS_ZError_PD_SLPdeg.compute(dict(row))
+#     graphMe(TS_ZError_PD_SLPdeg, "Feshie TS_ZError_PD_SLPdeg CELL: {}".format(idx+1))
+#     print result
+#
+# print "-------------------\nFeshie GPS_ZError_PD_SLPdeg_PQ"
+# for idx, row in data_feshie[['SlopeDeg', 'PointDensity', '3DPointQuality']].iterrows():
+#     result = GPS_ZError_PD_SLPdeg_PQ.compute(dict(row))
+#     graphMe(GPS_ZError_PD_SLPdeg_PQ, "Feshie GPS_ZError_PD_SLPdeg_PQ CELL: {}".format(idx+1))
+#     print result
+#
+# print "-------------------\nUGR CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr"
+# for idx, row in data_ugr[['Slope', 'PointDensity', '3DPointQuality', 'InterpolationError']].iterrows():
+#     result = CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr.compute(dict(row))
+#     graphMe(CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr, "UGR CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr CELL: {}".format(idx + 1))
+#     print result
+#
+# print "-------------------\nUGR CHaMP_TS_ZError_PD_SLPdeg_IntErr"
+# for idx, row in data_ugr[['Slope', 'PointDensity', 'InterpolationError']].iterrows():
+#     result = CHaMP_TS_ZError_PD_SLPdeg_IntErr.compute(dict(row))
+#     graphMe(CHaMP_TS_ZError_PD_SLPdeg_IntErr, "UGR CHaMP_TS_ZError_PD_SLPdeg_IntErr CELL: {}".format(idx + 1))
+#     print result
+#
+# print "-------------------\nUGR CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr"
+# for idx, row in data_ugr[['Slope', 'PointDensity', 'Roughness', '3DPointQuality', 'InterpolationError']].iterrows():
+#     result = CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr.compute(dict(row))
+#     graphMe(CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr, "UGR CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr CELL: {}".format(idx + 1))
+#     print result
 
-print "-------------------\nFeshie GPS_ZError_PD_SLPdeg_PQ"
-for idx, row in data_feshie[['SlopeDeg', 'PointDensity', '3DPointQuality']].iterrows():
-    result = GPS_ZError_PD_SLPdeg_PQ.compute(dict(row))
-    graphMe(TS_ZError_PD_SLPdeg, "Feshie GPS_ZError_PD_SLPdeg_PQ CELL: {}".format(idx+1))
-    print result
 
-print "-------------------\nUGR CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr"
-for idx, row in data_ugr[['Slope', 'PointDensity', '3DPointQuality', 'InterpolationError']].iterrows():
-    result = CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr.compute(dict(row))
-    graphMe(TS_ZError_PD_SLPdeg, "UGR CHaMP_TS_ZError_PD_SLPdeg_3DQ_IntErr CELL: {}".format(idx + 1))
-    print result
-
-print "-------------------\nUGR CHaMP_TS_ZError_PD_SLPdeg_IntErr"
-for idx, row in data_ugr[['Slope', 'PointDensity', 'InterpolationError']].iterrows():
-    result = CHaMP_TS_ZError_PD_SLPdeg_IntErr.compute(dict(row))
-    graphMe(TS_ZError_PD_SLPdeg, "UGR CHaMP_TS_ZError_PD_SLPdeg_IntErr CELL: {}".format(idx + 1))
-    print result
-
-print "-------------------\nUGR CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr"
-for idx, row in data_ugr[['Slope', 'PointDensity', 'Roughness', '3DPointQuality', 'InterpolationError']].iterrows():
-    result = CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr.compute(dict(row))
-    graphMe(TS_ZError_PD_SLPdeg, "UGR CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr CELL: {}".format(idx + 1))
+print "-------------------\nFeshie GPS_ZError_PD_SLPdeg_ZZ"
+for idx, row in data_feshie2[['PointDensityZZ', 'SlopeDegZZ']].iterrows():
+    result = GPS_ZError_PD_SLPdeg_ZZ.compute(dict(row))
+    graphMe(GPS_ZError_PD_SLPdeg_ZZ, "UGR CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr CELL: {}".format(idx + 1))
     print result
