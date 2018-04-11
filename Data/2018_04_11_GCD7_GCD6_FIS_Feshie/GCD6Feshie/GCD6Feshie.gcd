@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="yes"?>
+<ProjectDS xmlns="http://tempuri.org/ProjectDS.xsd">
+  <Project>
+    <ProjectID>1</ProjectID>
+    <Name>GCD6Feshie</Name>
+    <Description />
+    <OutputDirectory>D:\Testing\GCD</OutputDirectory>
+    <DateCreated>2018-04-11T09:50:24.5494477-07:00</DateCreated>
+    <GCDVersion>6.1.14.0</GCDVersion>
+    <Precision>0</Precision>
+    <DisplayUnits>m</DisplayUnits>
+    <CoordinateSystem>British_National_Grid</CoordinateSystem>
+    <ProjectType>AddIn</ProjectType>
+    <DEMSurvey>
+      <DEMSurveyID>1</DEMSurveyID>
+      <Name>DEM_2006</Name>
+      <Source>inputs\DEM2006\DEM2006.tif</Source>
+      <SingleMethodType>[Undefined]</SingleMethodType>
+      <MethodMask />
+      <SurveyDate />
+      <ProjectID>1</ProjectID>
+      <SingleMethod>true</SingleMethod>
+      <MultiMethod>false</MultiMethod>
+      <MethodMaskField />
+      <CellResolution>1</CellResolution>
+      <ExtentLeft>284261</ExtentLeft>
+      <ExtentBottom>792383</ExtentBottom>
+      <ExtentRight>284511</ExtentRight>
+      <ExtentTop>793069</ExtentTop>
+      <OriginalExtentLeft>284261</OriginalExtentLeft>
+      <OriginalExtentBottom>792383</OriginalExtentBottom>
+      <OriginalExtentRight>284511</OriginalExtentRight>
+      <OriginalExtentTop>793069</OriginalExtentTop>
+      <OriginalSource>D:\GISData\Feshie\Raw\DEMs\DEM_2006.tif</OriginalSource>
+      <OriginalComputer>NARTOWER1</OriginalComputer>
+      <OriginalCellSize>1</OriginalCellSize>
+      <SurveyHour>0</SurveyHour>
+      <SurveyMin>0</SurveyMin>
+      <AssociatedSurface>
+        <AssociatedSurfaceID>1</AssociatedSurfaceID>
+        <DEMSurveyID>1</DEMSurveyID>
+        <Name>Slope Degrees</Name>
+        <Source>inputs\DEM2006\AssociatedSurfaces\SlopeDegrees\SlopeDegrees.tif</Source>
+        <Type>Slope Degrees</Type>
+        <OriginalSource>D:\Testing\GCD\GCD6Feshie\inputs\DEM2006\AssociatedSurfaces\SlopeDegrees\SlopeDegrees.tif</OriginalSource>
+      </AssociatedSurface>
+      <AssociatedSurface>
+        <AssociatedSurfaceID>2</AssociatedSurfaceID>
+        <DEMSurveyID>1</DEMSurveyID>
+        <Name>PDensity</Name>
+        <Source>inputs\DEM2006\AssociatedSurfaces\PDensity\PDensity.tif</Source>
+        <Type>Point Density</Type>
+        <OriginalSource>D:\Testing\GCD\GCD6Feshie\inputs\DEM2006\AssociatedSurfaces\PDensity\PDensity.tif</OriginalSource>
+      </AssociatedSurface>
+      <ErrorSurface>
+        <ErrorSurfaceID>1</ErrorSurfaceID>
+        <Name>GCD6FIS</Name>
+        <Type>FIS</Type>
+        <Source>inputs\DEM2006\ErrorSurfaces\GCD6FIS\GCD6FIS.tif</Source>
+        <DEMSurveyID>1</DEMSurveyID>
+        <MultiErrorProperties>
+          <MultiErrorID>1</MultiErrorID>
+          <Method>[Undefined]</Method>
+          <Error>0</Error>
+          <ErrorID>1</ErrorID>
+          <ErrorType>GPS_ZError_PD_SLPdeg_ZZ</ErrorType>
+          <AssociatedSurfaceID>0</AssociatedSurfaceID>
+        </MultiErrorProperties>
+        <FISInputs>
+          <FISInputsID>1</FISInputsID>
+          <ErrorID>1</ErrorID>
+          <FISInput>SlopeDegZZ</FISInput>
+          <AssociatedSurface>Slope Degrees</AssociatedSurface>
+          <FIS>GPS_ZError_PD_SLPdeg_ZZ</FIS>
+        </FISInputs>
+        <FISInputs>
+          <FISInputsID>2</FISInputsID>
+          <ErrorID>1</ErrorID>
+          <FISInput>PointDensityZZ</FISInput>
+          <AssociatedSurface>PDensity</AssociatedSurface>
+          <FIS>GPS_ZError_PD_SLPdeg_ZZ</FIS>
+        </FISInputs>
+      </ErrorSurface>
+    </DEMSurvey>
+  </Project>
+</ProjectDS>

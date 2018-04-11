@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20180411</CreaDate><CreaTime>09504000</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Spatial Analyst Tools.tbx\Slope" Date="20180411" Time="095040">Slope D:\Testing\GCD\GCD6Feshie\inputs\DEM2006\DEM2006.tif D:\Testing\GCD\GCD6Feshie\inputs\DEM2006\AssociatedSurfaces\SlopeDegrees\SlopeDegrees.tif DEGREE 1</Process></lineage></DataProperties></Esri></metadata>

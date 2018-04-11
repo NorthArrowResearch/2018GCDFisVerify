@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Project>
+  <Name>GCD7Feshie</Name>
+  <DateTimeCreated>2018-04-11T09:52:01.4958403-07:00</DateTimeCreated>
+  <GCDVersion>7.0.11.0</GCDVersion>
+  <Description />
+  <Units>
+    <Horizontal>Meter</Horizontal>
+    <Vertical>Meter</Vertical>
+    <Area>SquareMeter</Area>
+    <Volume>CubicMeter</Volume>
+  </Units>
+  <CellArea>1</CellArea>
+  <DEMSurveys>
+    <DEM>
+      <Name>DEM_2006</Name>
+      <Path>Inputs\Surveys\DEM0001\DEM2006.tif</Path>
+      <Hillshade>Inputs\Surveys\DEM0001\DEM2006_HS.tif</Hillshade>
+      <ErrorSurfaces>
+        <ErrorSurface>
+          <Name>GCD7FIS</Name>
+          <Path>Inputs\Surveys\DEM0001\ErrorSurfaces\Err0001\GCD7FIS.tif</Path>
+          <IsDefault>True</IsDefault>
+          <ErrorSurfaceProperties>
+            <ErrorSurfaceProperty>
+              <Name>Entire DEM Extent</Name>
+              <FISRuleFile>C:\Users\philip\Desktop\GPS_ZError_PD_SLPdeg_ZZ.fis</FISRuleFile>
+              <FISInputs>
+                <Input>
+                  <Name>SlopeDegZZ</Name>
+                  <AssociatedSurface>SlopeDegrees</AssociatedSurface>
+                </Input>
+                <Input>
+                  <Name>PointDensityZZ</Name>
+                  <AssociatedSurface>PDensity</AssociatedSurface>
+                </Input>
+              </FISInputs>
+            </ErrorSurfaceProperty>
+          </ErrorSurfaceProperties>
+        </ErrorSurface>
+      </ErrorSurfaces>
+      <AssociatedSurfaces>
+        <AssociatedSurface>
+          <Name>SlopeDegrees</Name>
+          <Type>SlopeDegree</Type>
+          <Path>Inputs\Surveys\DEM0001\AssocSurfaces\Ass0001\SlopeDegrees.tif</Path>
+        </AssociatedSurface>
+        <AssociatedSurface>
+          <Name>PDensity</Name>
+          <Type>PointDensity</Type>
+          <Path>Inputs\Surveys\DEM0001\AssocSurfaces\Ass0002\PDensity.tif</Path>
+        </AssociatedSurface>
+      </AssociatedSurfaces>
+    </DEM>
+  </DEMSurveys>
+</Project>
